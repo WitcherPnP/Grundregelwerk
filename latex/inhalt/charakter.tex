@@ -1,0 +1,284 @@
+{\let\clearpage\relax\chapter{Charakter}}
+\section{Grundattribute}
+Jeder Charakter besitzt folgende Grundattribute auf denen Talente, Angriffe und die meisten Fähigkeiten basieren - Mut (MU), Klugheit (KL), Intuition (IN), Charisma (CH), Fingerfertig (FF), Geschicklichkeit (GE), Konstitution (KO) und Körperkraft (KK). Jede Rasse gibt feste Punkte auf die einzelnen Grundattribute. Durch weitere Talentpunkte können sie weiter gesteigert werden. Tabelle \ref{tab:Steigungsfaktor}(Spalte E) zeigt wie viele Punkte benötigt werden, um ein Grundattribut zu erhöhen. Bei der Erstellung eines Charakters darf kein Attribut über 14 sein.
+
+\section{Talente}
+Jeder Held besitzt viele Talente aus unterschiedlichen Kategorien. Jede Kategorie besteht aus mehreren Talenten, welche wiederum einen Steigungsfaktor (SF) haben. Der SF jedes Talentes hängt von der gewählten Klasse ab. Dieser Faktor bestimmt, wie viele Talentpunkte ausgegeben werden müssen, um ein Talent aus dieser Kategorie aufzuleveln. Der SF wird als Buchstabe angegeben (siehe Tab. \ref{tab:Steigungsfaktor}). Je mehr ein Talent gelevelt wird, desto mehr Punkte benötigt man. Jeder Spieler bekommt eine bestimmte Anzahl Talentpunkte, die er beliebig auf alle Talente verteilen kann. Wie viele Talentpunkte er bekommt hängt von der gewählten Rasse und Klasse ab.
+ 
+\textit{Beispiel: Wenn der Steigunsfaktor des Talentes Menschenkenntnis gleich B ist, dann muss ich 2 Talentpunkte ausgeben um es um einen Punkt zu erhöhen. Solbald das Talent auf 12 ist, benötige ich 4 Punkte um es weiter zu verbessern.}
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\textbf{SF} & \textbf{A} & \textbf{B} & \textbf{C} & \textbf{D} & \textbf{E} \\
+
+\hline
+1-12 & 1 & 2 & 3 & 4 & 15 \\
+
+\hline
+13-14 & 2 & 4 & 6 & 8 & 15 \\
+
+\hline
+15 & 3 & 6 & 9 & 12 & 30 \\
+
+\hline
+16+ & 4 & 8 & 12 & 16 & 30 \\
+
+\hline
+\end{tabular}
+\end{center}
+\caption{Steigungsfaktor (SF) der Talente}
+\label{tab:Steigungsfaktor}
+\end{table}
+
+
+\newpage
+\begin{center}
+\begin{longtable}{|l|c|c|c|c|c|c|c|c|}
+\hline
+Talent & TW & Mil. & Mot. & Soz. & Handw. & Wissen & Natur & Hexer \\
+
+\hline
+\multicolumn{9}{|l|}{} \\
+\multicolumn{1}{|l}{\textbf{Körpertalente}} & \multicolumn{1}{c}{\textcolor{gray}{\textit{MU/GE/KK}}} & \multicolumn{7}{r|}{} \\
+\hline
+Klettern & MU/GE/KK & B & B & C & C & C & A & B \\
+\hline
+Körperbeherrschung & GE/GE/KO & C & C & C & C & C & C & B \\
+\hline
+Kraftakt & KO/KK/KK & B & B & C & C & C & B & B \\
+\hline
+Selbsbeherrschung & MU/MU/KO & C & C & C & C & B & C & B \\
+\hline
+Sinnesschärfe & KL/IN/IN & C & C & C & C & C & C & B \\
+\hline
+Einschüchtern & MU/IN/CH & A & B & C & B & C & B & A \\
+\hline
+Zechen\footnote{Sonderregeln (Kapitel \ref{chap:sonderregeln}) beachten.} & MU/KO/KO & ? & ? & ? & ? & ? & ? & A\footnote{ist nicht von Sonderregeln betroffen} \\
+
+
+\hline
+\multicolumn{9}{|l|}{} \\
+\multicolumn{1}{|l}{\textbf{Motorische Talente}} & \multicolumn{1}{c}{\textcolor{gray}{\textit{IN/GE/FF}}} & \multicolumn{7}{r|}{} \\
+\hline
+Gaukeleien & MU/CH/FF & C & A & B & B & C & D & D \\
+\hline
+Reiten & CH/GE/KK & A & B & C & C & C & A & A \\
+\hline
+Schwimmen & GE/KO/KK & B & B & B & B & B & A & B \\
+\hline
+Taschendiebstahl & MU/FF/GE & C & A & C & B & C & C & C \\
+\hline
+Verbergen & MU/FF/GE & B & B & C & C & C & C & C \\
+\hline
+Schlösserknacken & IN/FF/FF & C & B & C & C & C & C & C \\
+\hline
+Werfen\footnotemark[3] & & B & B & B & B & C & B & B \\
+ 
+
+\hline
+\multicolumn{9}{|l|}{} \\
+\multicolumn{1}{|l}{\textbf{Gesellschaftstalente}} & \multicolumn{1}{c}{\textcolor{gray}{\textit{IN/CH/CH}}} & \multicolumn{7}{r|}{} \\
+\hline
+Singen\footnotemark[1] & KL/CH/KO & B & C & B & C & B & B & C \\
+\hline
+Musizieren\footnotemark[1] & CH/FF/KO & C & C & B & C & B & B & C \\
+\hline
+Tanzen\footnotemark[1] & KL/CH/GE & C & C & A & C & A & B & D \\
+\hline
+Bekehren \& Überzeugen & MU/KL/CH & B & B & B & B & B & C & C \\
+\hline
+Etikette\footnotemark[1] & KL/IN/CH & B & D & B & C & A & C & D \\
+\hline
+Gassenwissen & KL/IN/CH & C & C & B & C & C & D & D \\
+\hline
+Menschenkenntnis & KL/IN/CH & B & B & B & C & C & D & D \\
+\hline
+Überreden & MU/IN/CH & C & C & B & C & C & C & C \\
+\hline
+Betören\footnotemark[1] & IN/CH/CH & ? & ? & ? & ? & ? & ? & C\footnotemark[2] \\
+\hline
+Verkleiden & IN/CH/GE & B & B & A & C & B & A & B \\
+\hline
+Brett- \& Glücksspiel & KL/KL/IN & B & A & A & B & B & B & B \\
+\hline
+Handel\footnotemark[1] & KL/IN/CH & B & B & B & B & C & C & C \\
+
+
+\hline
+\multicolumn{9}{|l|}{} \\
+\multicolumn{9}{|l|}{} \\
+\hline
+\multicolumn{1}{|l}{\textbf{Naturtalente}} & \multicolumn{1}{c}{\textcolor{gray}{\textit{MU/GE/KO}}} & \multicolumn{7}{r|}{} \\
+\hline
+Fährtensuchen & MU/IN/GE & B & C & D & C & D & A & A \\
+\hline
+Fesseln & KL/FF/KK & A & B & C & B & C & B & B \\
+\hline
+Fischen \& Angeln & FF/GE/KO & B & B & D & B & C & A & B \\
+\hline
+Orientierung & KL/IN/IN & B & B & B & B & B & A & B \\
+\hline
+Pflanzenkunde & KL/FF/KO & D & D & C & D & B & B & B \\
+\hline
+Tierkunde & MU/MU/CH & D & D & D & D & B & A & A \\
+\hline
+Wildnisleben & MU/GE/KO & D & D & D & D & B & A & B \\
+
+
+\hline
+\multicolumn{9}{|l|}{} \\
+\multicolumn{1}{|l}{\textbf{Wissenstalente}} & \multicolumn{1}{c}{\textcolor{gray}{\textit{KL/KL/IN}}} & \multicolumn{7}{r|}{} \\
+\hline
+Geographie & KL/KL/IN & B & C & B & C & A & C & B \\
+\hline
+Götter \& Kulte & KL/KL/IN & C & D & C & C & A & C & C \\
+\hline
+Magiekunde\footnotemark[1] & KL/KL/IN & C & C & C & C & A & C & B \\
+\hline
+Sagen \& Legenden & KL/KL/IN & B & C & B & C & A & B & A \\
+\hline
+Monsterkunde & KL/KL/IN & C & D & D & D & B & C & A \\
+\hline
+Alchemie & MU/KL/FF & D & D & D & D & A & D & A \\
+\hline
+Heilkunde & KL/FF/FF & C & C & C & C & B & C & B \\
+ 
+
+\hline
+\multicolumn{9}{|l|}{} \\
+\multicolumn{1}{|l}{\textbf{Handwerkstalente}} & \multicolumn{1}{c}{\textcolor{gray}{\textit{FF/FF/KO}}} & \multicolumn{7}{r|}{} \\
+\hline
+Lebensmittelbearbeitung & IN/FF/FF & B & B & B & C & C & A & B \\
+\hline
+Stoffbearbeitung & KL/FF/FF & B & B & B & A & C & B & B \\
+\hline
+Holzbearbeitung & FF/GE/KK & B & B & C & A & C & B & B \\
+\hline
+Lederbearbeitung\footnotemark[1] & FF/GE/KO & C & C & C & B & D & C & C \\
+\hline
+Steinbearbeitung\footnotemark[1] & FF/FF/KK & C & C & D & B & D & C & C \\
+\hline
+Metallbearbeitung\footnotemark[1] & FF/KO/KK & C & D & D & B & D & C & C \\
+ 
+
+\hline
+\multicolumn{9}{|l|}{} \\
+\multicolumn{1}{|l}{\textbf{Waffen \& Kampf}\footnote{Kapitel \ref{chap:waffen_und_kampf} beachten.}} & \multicolumn{1}{c}{\textcolor{gray}{\textit{MU/KK/GE}}} & \multicolumn{7}{r|}{} \\
+\hline
+Willenskraft\footnotemark[3] & MU/IN/CH & B & C & C & C & C & B & B \\
+\hline
+Schwertkampf & & B & C & C & C & C & C & A \\
+\hline
+Axtkampf & & B & C & C & C & C & C & - \\
+\hline
+Bogenschießen & & B & C & C & C & C & C & - \\
+\hline
+Armbrustschießen & & B & C & C & C & C & C & - \\
+\hline
+Speerkampf & & B & C & C & C & C & C & - \\
+\hline
+Stabkampf\footnotemark[3] & & B & C & C & C & B & C & A \\
+\hline
+Raufen\footnotemark[3] & & A & B & C & B & C & B & A \\
+\hline
+Kampftechnik\footnotemark[3] & & A & B & C & C & C & B & A \\
+\hline
+Ausweichschritt\footnotemark[3] & & \multicolumn{7}{c|}{AW} \\
+
+\hline
+\caption{Talente}
+\label{tab:Talente}
+\end{longtable}
+\end{center}
+
+\subsection{Sonderregeln}
+\label{chap:sonderregeln}
+Für manche Talente gelten besondere Regeln. Dadurch kann der endgültige SF von Talenten von der Talente-Tabelle \ref{tab:Talente} abweichen. Das kann von der gewählten Klasse oder Rasse abhängen, aber auch von bestimmten Vor- und Nachteilen\footnote{Siehe Kapitel \ref{chap:vor_und_nachteile}}. Auch andere Faktoren können den SF von bestimmten Talenten beeinflussen.
+
+\subsubsection{Zechen}
+Abhängig vom \textbf{Körpergewicht}: \\
+\textbf{bis 69kg}: D \\
+\textbf{65kg bis 85kg}: C \\
+\textbf{über 85kg}: B 
+
+Bei \textbf{Zwergen} wird der SF um eine Stufe verbessert. \\
+Bei \textbf{Elfen} wird der SF um eine Stufe verschlechtert. 
+
+Der Vorteil \textit{Vieltrinker}\footnotemark[4] verbessert den SF um eine Stufe. \\
+Der Nachteil \textit{Alkoholiker}\footnotemark[5] verbessert den SF um zwei Stufen. 
+
+\subsubsection{Betören}
+\textbf{Menschliche Frauen} bekommen unabhängig ihrer Klasse ein C (SF). \\
+\textbf{Elfische Frauen} bekommen unabhängig ihrer Klasse ein B. \\
+\textbf{Elfische Männer} bekommen unabhängig ihrer Klasse ein C. \\
+\textbf{Alle anderen Rassen} bekommen ein D. 
+
+Der Vorteil \textit{Gutaussehend}\footnote{Details zum Vorteil in Kapitel \ref{chap:vorteile}} verbessert den SF um eine Stufe pro Vorteils-Stufe. \\
+Der Nachteil \textit{Hässlich}\footnote{Details zum Nachteil in Kapitel \ref{chap:nachteile}} verschlechtert dem SF um eine Stufe pro Nachteils-Stufe. 
+
+\subsubsection{Werfen}
+Gilt für improvisierte Wurfwaffen wie z.B. Steine.
+
+\subsubsection{Singen/Musizieren/Tanzen}
+Elfen bekommen ein A.
+
+\subsubsection{Magiekunde}
+Bei \textbf{Magiebegabten} entscheidet der SL ob der Spieler ein A oder B bekommt. \\
+\textbf{Nicht Magiebegabte} bekommen ein C. \\
+\textit{Das letzte Wort hat der SL.}
+
+\subsubsection{Etikette}
+Der SL entscheidet unter Berücksichtigung der gewählten Klasse. Bauern o.Ä. sollten ein C oder D bekommen. Spieler mit dem Vorteil \textit{Adel}\footnotemark[4] bekommen ein A.
+
+\subsubsection{Handel}
+\textbf{Kaufleute} bekommen ein A.
+
+\subsubsection{Leder-, Stein-, Metallbearbeitung}
+Bei \textbf{Zwergen} wird der SF um eine Stufe verbessert. 
+
+\subsection{Waffen \& Kampf}
+\label{chap:waffen_und_kampf}
+Kampferfahrene Klassen dürfen sich auf den Umgang mit einer Waffe spezialisieren und die entsprechende Kategorie auf A ändern.
+
+\subsubsection{Willenskraft}
+Bei Erfolg alle Erschwernisse bei den nächsten 4 Angriffen ignorieren. Bei Misserfolg die nächsten 4 Angriffe zusätzlich um 2 erschweren. Nur einmal pro Kampf einsetzbar. Mali der Waffe werden nicht ignoriert. Kann auch für 1 Fähigkeit benutzt werden.
+
+\subsubsection{Stabkampf}
+Wird auch für improvisierte Schlagwaffen, z.B. Stöcke oder Äste, verwendet.
+
+\subsubsection{Raufen}
+Jeder Spieler der die Kampfsonderfertigkeit \textit{Fortgeschrittene Kampfkunst} hat, bekommt standardmäßig 6 Punkte auf \textit{Raufen}.
+
+\subsubsection{Kampftechnik}
+Kann für Sonderaktionen wie Schwung-Angriff oder Entwaffnung, aber auch um sich z.B. aus einem Würgegriff zu befreien benutzt werden. Jeder Spieler der die Kampfsonderfertigkeit \textit{Fortgeschrittene Kampfkunst} hat, bekommt standardmäßig 6 Punkte auf \textit{Kampftechnik}.
+
+\subsubsection{Ausweichschritt}
+Das selbe wie Ausweichen nur mit anschließender Bewegung (~1m).
+
+
+\section{Lebenslauf}
+Folgende Fragen sollten mindestens beim Lebenslauf beantwortet werden.
+
+\begin{enumerate}
+\item Wo wurdest du geboren?
+\item Wer sind deine Eltern?
+	\begin{enumerate}[label=2.\arabic*.]
+	\item Wo leben sie?
+	\item Was machen sie beruflich?
+	\end{enumerate}
+
+\item Wieviele Geschwister hast du?
+	\begin{enumerate}[label=3.\arabic*.]
+	\item Wo leben sie?
+	\item Was machen sie beruflich?
+	\item Solltest du sterben, kannst du mit einem Geschwisterteil weiterspielen
+	\end{enumerate}
+
+\item Wie geht es deiner Familie?
+	\begin{enumerate}[label=4.\arabic*.]
+	\item Gibt sie ein Problem? Schulden, Kriminell, Rivalen (rivalisierende Familien), etc...
+	\end{enumerate}
+
+\end{enumerate}

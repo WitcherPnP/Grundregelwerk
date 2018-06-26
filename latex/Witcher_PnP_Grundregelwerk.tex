@@ -1,0 +1,70 @@
+% Dies ist die Hauptseite des Dokumentes. Hier werden u.A. alle Einstellungen bzgl. des Layouts und Kapitel eingebunden.
+%Veränderungen müssen in folgenden Dateien vorgenommen werden:
+			%- einstellungen/layout.tex 
+			%- einstellungen/newCommands.tex
+			%- titelseite.tex
+			%- bibliography.bib
+			%- einzelne Kapitel-Dateien (inhalt/<kapitelname>.tex)
+			
+\input{einstellungen/newCommands.tex}       % eigene Befehle
+\input{einstellungen/layout.tex}			% Layouteinstellungen
+
+
+%------Beginn des Gesamtdokumentes--------------------------------------------------------
+\begin{document}
+
+\pagenumbering{roman}
+
+
+%--------------- Titelseite/Deckblatt ----------------------------------------------------
+\include{titelseite}			
+
+
+%--------------- Inhaltsverzeichnis ------------------------------------------------------
+\addcontentsline{toc}{chapter}{Inhaltsverzeichnis}
+\tableofcontents % Inhaltsverzeichnis wird automatisch generiert
+\newpage
+
+
+\pagenumbering{arabic}	
+
+
+%--------------- Kapitel -----------------------------------------------------------------
+\input{inhalt/allgemeines}					
+\input{inhalt/rassen}					
+\input{inhalt/klassen}
+\input{inhalt/kampf}	
+\input{inhalt/mounts}				
+\input{inhalt/charakter}
+\input{inhalt/waffen}
+\input{inhalt/ruestungen}
+\input{inhalt/glyphen}
+\input{inhalt/sonstige_items}
+\input{inhalt/alchemie}
+\input{inhalt/skills}	
+\input{inhalt/religionen}	
+\input{inhalt/vor_und_nachteile}	
+\input{inhalt/monster}	
+%\input{inhalt/weltstatus}	
+%\input{inhalt/lore}
+%\input{inhalt/orte}	
+%\input{inhalt/NSCs}
+
+
+\pagenumbering{roman}
+
+
+%--------------- optionales Listings-Verzeichnis -----------------------------------------
+%\lstlistoflistings
+%\addcontentsline{toc}{chapter}{Listings}
+
+%--------------- optionales Tabellenverzeichnis ------------------------------------------
+\listoftables
+\addcontentsline{toc}{chapter}{Tabellenverzeichnis}
+
+%--------------- optionales Abbildungsverzeichnis ----------------------------------------
+%\listoffigures
+%\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
+
+%------Ende des Dokumentes----------------------------------------------------------------
+\end{document}

@@ -1,0 +1,73 @@
+%Hier sind alle Einstellungen enthalten, die sich auf das Seiten- und Dokumentenlayout beziehen
+
+\documentclass[
+	12pt,								% Schriftgr��e
+	DIV12,
+	german,							% f�r Umlaute, Silbentrennung etc.
+	oneside,						% einseitiges Dokument
+	titlepage,					% es wird eine Titelseite verwendet
+	halfparskip,				% Abstand zwischen Abs�tzen (halbe Zeile)
+	normalheadings,			% Gr��e der �berschriften verkleinern
+	tablecaptionabove,	% Beschriftung von Tabellen unterhalb ausgeben
+	final								% Status des Dokuments (final/draft)
+]{scrreprt}						% 
+
+
+\include{einstellungen/packages}			% enth�lt eingebundene Packete
+
+%------Seitenr�nder-------------------------------------------------------------
+\geometry{verbose, 										% zeigt die eingestellten Parameter beim Latexlauf an
+			paper=a4paper, 									% Papierformat			
+			top=12.5mm, 											% Rand oben
+			left=25mm, 											% Rand links
+			right=20mm, 										% Rand rechts
+			bottom=40mm, 										% Rand unten
+			pdftex													% schreibt das Papierformat in dei Ausgabe damit Ausgabeprogramm Papiergr��e erkennt		
+	} 
+	
+%Seitenlayout
+\onehalfspace        % 1,5-facher Abstand  
+
+%------Kopf- und Fu�zeilen ------------------------------------------------------
+\pagestyle{scrheadings}
+
+%------Kopf- und Fu�zeile auch auf Kapitelanfangsseiten -------------------------
+\renewcommand*{\chapterpagestyle}{scrheadings}
+
+%------Schrift-Einstellungen-----------------------------------------------------
+\renewcommand{\headfont}{% Kopfzeile
+	\normalfont % Schriftform
+}
+%\addtokomafont{chapterentry}{% Hauptkapitel im Inhaltsverzeichnis
+%	\normalfont % Schriftform
+%	\normalsize % Schriftgröße
+%	\textbf     % Schriftstyle (fett, kursiv=\textit)
+%}
+
+%------Schriftfarben definieren -------------------------------------------------
+\definecolor{OliveGreen}{RGB}{53,156,53}
+
+%------Abstände definieren ------------------------------------------------------
+\renewcommand*{\chapterheadstartvskip}{\vspace*{3cm}} 
+\renewcommand*{\chapterheadendvskip}{\vspace{0cm}}
+
+%------Kopfzeile-----------------------------------------------------------------
+%\setlength{\headheight}{21mm}				% H�he der Kopfzeile
+%\ihead{\large{\small{\chaptername}}}		% Text in der linken Box
+%\chead{}														% Text in der mittleren Box
+
+\newcommand{\headchapter}{\leftmark}   % <number of section>
+
+\renewcommand{\chaptermark}[1]{ \markboth{#1}{} }
+\setlength{\headheight}{15mm}
+\ihead{}  
+\chead{\headchapter}
+
+%----Fusszeile
+\cfoot{}														% Text in mittlerer Box
+\ofoot{\pagemark}										% Seitenzahl in rechter Box			
+
+
+
+
+

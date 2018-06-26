@@ -1,0 +1,50 @@
+%------�ndern von Schriftschnitten - (Muss ganz am Anfang stehen !) -------------
+\usepackage{fix-cm}
+
+%------Umlaute ------------------------------------------------------------------
+% 	Umlaute/Sonderzeichen wie ���� k�nnen direkt im Quelltext verwenden werden.
+%		Erlaubt automatische Trennung von Worten mit Umlauten.
+\usepackage[T1]{fontenc}								 
+\usepackage[utf8]{inputenc}
+
+%------Anpassung der Landessprache-----------------------------------------------
+\usepackage[ngerman]{babel}
+
+%------Einfache Definition der Zeilenabst�nde und Seitenr�nder-------------------
+\usepackage{geometry}
+\usepackage{bibgerm}
+\usepackage{setspace}
+\usepackage{relsize}
+\usepackage[headsepline, footsepline, ilines]{scrpage2}
+\usepackage{graphicx}
+\usepackage{pdfpages}
+\usepackage{colortbl}
+\usepackage{color}
+\usepackage{enumitem}
+\usepackage{soul}
+\usepackage{helvet}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{ragged2e}
+\usepackage{lscape}
+\usepackage{textcomp} 
+\usepackage{amssymb}
+\usepackage{multirow}
+\usepackage[
+	bookmarks,
+	bookmarksopen=true,
+	colorlinks=true,
+	linkcolor=black,				% einfache interne Verkn�pfungen
+	anchorcolor=black,			% Ankertext
+	citecolor=black, 				% Verweise auf Literaturverzeichniseintr�ge im Text
+	filecolor=black, 				% Verkn�pfungen, die lokale Dateien �ffnen
+	menucolor=black, 				% Acrobat-Men�punkte
+	urlcolor=black, 				% Farbe f�r URL-Links
+	backref,								% Zur�cktext nach jedem Bibliografie-Eintrag als Liste von �berschriftsnummern
+	pagebackref,						% Zur�cktext nach jedem Bibliografie-Eintrag als Liste von Seitenzahlen
+	plainpages=false,				% zur korrekten Erstellung der Bookmarks
+	pdfpagelabels,					% zur korrekten Erstellung der Bookmarks
+	hypertexnames=false,		% zur korrekten Erstellung der Bookmarks
+	linktocpage 						% Seitenzahlen anstatt Text im Inhaltsverzeichnis verlinken
+	]{hyperref}
+\usepackage{tikz}
