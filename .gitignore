@@ -1,6 +1,19 @@
-*.*
-!.gitignore
-!*.tex
-!*.pdf
-!*.md
-!*.txt
+DSA_5_Charakterbogen.pdf
+
+# old version
+Charakterbogen
+
+# LaTeX files
+*.aux
+*.log
+*.lot
+*.out
+*.gz
+*.toc
+*.bbl
+*.blg
+
+# images
+*.jpg
+*.png
+*.bmp
