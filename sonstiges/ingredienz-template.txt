@@ -1,0 +1,20 @@
+\subsection{Balissafrucht}
+% Beschreibung der Frucht. Hier kommen auch Erntehinweise (Dornen, empfindliche Frucht) rein. Die benötigten Utensilien, wie beispielsweise Sichel oder Handschuhe kommen in die untere Tabelle und nicht in die Beschreibung. 
+
+Balissafrucht ist eine essbare Frucht die am Balissastrauch wächst. Sie zeichnet sich durch eine zarte magische Resonanz aus. 
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|l|l|p{1cm}|l|l|}
+	\cline{1-2} \cline{4-5}
+	\textbf{Hauptwirkstoff} & Quebrith && \textbf{Pflückprobe} & - \\ \cline{1-2} \cline{4-5}
+	\textbf{Sekundärwirkstoff} & Rubedo && \textbf{Menge} & 2+1W6 pro Strauch \\ \cline{1-2} \cline{4-5}
+	\textbf{Farbe} & violett (2) && \textbf{Vorkommen} & Feld, Wald \\ \cline{1-2} \cline{4-5}
+	\textbf{Geruch} & fruchtig (1) && \textbf{Region} & überall \\ \cline{1-2} \cline{4-5}
+	\textbf{Geschmack} & süß (2) && \textbf{Wert} & 12Kr \\ \cline{1-2} \cline{4-5}
+	\textbf{Spezialeigenschaften} & - && \textbf{Utensilien} & - \\ \cline{1-2} \cline{4-5}
+\end{tabular}
+\end{center}
+\caption{Balissafrucht}
+\label{tab:balissafrucht}
+\end{table}
