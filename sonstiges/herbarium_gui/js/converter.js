@@ -41,13 +41,16 @@ docReady(function() {
   var Geruch = document.getElementById("geruch");
   var Geschmack = document.getElementById("geschmack");
   var Spezialeigenschaften = document.getElementById("spezialeigenschaften");
+  var SpezialeigenschaftenIsMultiline = document.getElementById("spezialeigenschaftenIsMultiline");
   var Probe = document.getElementById("probe");
   var Menge = document.getElementById("menge");
   var Vorkommen = document.getElementById("vorkommen");
-  var VorkommenIsMultiline = document.getElementById("isMultiline");
+  var VorkommenIsMultiline = document.getElementById("vorkommenIsMultiline");
   var Region = document.getElementById("region");
+  var RegionIsMultiline = document.getElementById("regionIsMultiline");
   var Wert = document.getElementById("wert");
   var Utensilien = document.getElementById("utensilien");
+  var UtensilienIsMultiline = document.getElementById("utensilienIsMultiline");
   var Latex = document.getElementById("latex");
 
   window.resetAll = function() {
@@ -59,13 +62,16 @@ docReady(function() {
     Geruch.value = "";
     Geschmack.value = "";
     Spezialeigenschaften.value = "";
+    SpezialeigenschaftenIsMultiline.checked = false;
     Probe.value = "";
     Menge.value = "1 pro Pflanze";
     Vorkommen.value = "";
     VorkommenIsMultiline.checked = false;
     Region.value = "überall";
+    RegionIsMultiline.checked = false;
     Wert.value = "";
     Utensilien.value = "";
+    UtensilienIsMultiline.checked = false;
     Latex.value = "";
   }
 
@@ -117,13 +123,13 @@ docReady(function() {
         Farbe.value || "-",
         Geruch.value || "-",
         Geschmack.value || "-",
-        Spezialeigenschaften.value || "-",
+        Spezialeigenschaften.value ? (SpezialeigenschaftenIsMultiline.checked ? "\\brcell{{0}}".format(Spezialeigenschaften.value.simpleReplace(",", " \\\\")) : Spezialeigenschaften.value) : "-",
         Probe.value || "-",
         Menge.value || "1 pro Pflanze",
         Vorkommen.value ? (VorkommenIsMultiline.checked ? "\\brcell{{0}}".format(Vorkommen.value.simpleReplace(",", " \\\\")) : Vorkommen.value) : "-",
-        Region.value || "überall",
+        Region.value ? (RegionIsMultiline.checked ? "\\brcell{{0}}".format(Region.value.simpleReplace(",", " \\\\")) : Region.value) : "überall",
         Wert.value ? Wert.value + "Kr" : "n.a.",
-        Utensilien.value || "-",
+        Utensilien.value ? (UtensilienIsMultiline.checked ? "\\brcell{{0}}".format(Utensilien.value.simpleReplace(",", " \\\\")) : Utensilien.value) : "-",
         Name.value || "Name unbekannt",
         Name.value.toLatexLabel() || "-"
       );
