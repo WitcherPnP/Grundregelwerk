@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Herbarium GUI</title>
+	<meta charset="UTF-8" />
+	<link href="css/index.css" rel="stylesheet" />
+
+	<script src="js/ready.js"></script>
+	<script src="js/converter.js"></script>
+</head>
+<body>
+	
+	<h2>Allgemeine Infos</h2>
+	<label for="name">Name: </label>
+	<input type="text" name="name" id="name"><br/>
+	<br/>
+	<label for="beschreibung">Beschreibung:</label><br />
+	<textarea name="beschreibung" id="beschreibung" cols="70" rows="12"></textarea><br/>
+	Die Beschreibung muss in LaTeX geschrieben werden. So macht man <i>\textit{kursiven Text}.</i>
+
+	<h2>Eigenschaften</h2>
+	<div class="left">
+		<table>
+			<tr>
+				<td>
+					<b>Hauptwirkstoff</b>
+				</td>
+				<td>
+					<input type="text" id="hwirkstoff">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<b>Sekundärwirkstoff</b>
+				</td>
+				<td>
+					<input type="text" id="swirkstoff">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<b>Farbe</b>
+				</td>
+				<td>
+					<input type="text" id="farbe">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<b>Geruch</b>
+				</td>
+				<td>
+					<input type="text" id="geruch">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<b>Geschmack</b>
+				</td>
+				<td>
+					<input type="text" id="geschmack">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<b>Spazieleigenschaften</b>
+				</td>
+				<td>
+					<input type="text" id="spezialeigenschaften">
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	<div>
+			<table>
+				<tr>
+					<td>
+						<b>Pflückprobe</b>
+					</td>
+					<td>
+						<input type="text" id="probe">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Menge</b>
+					</td>
+					<td>
+						<input type="text" id="menge" value="1 pro Pflanze">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Vorkommen</b>
+					</td>
+					<td>
+						<input type="text" id="vorkommen">
+						<input type="checkbox" id="isMultiline">
+						<label for="isBRCell">multiline cell*</label>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Region</b>
+					</td>
+					<td>
+						<input type="text" id="region" value="überall">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Wert</b>
+					</td>
+					<td>
+						<input type="text" id="wert"> Kr
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Utensilien</b>
+					</td>
+					<td>
+						<input type="text" id="utensilien">
+					</td>
+				</tr>
+			</table>
+		</div>
+		<hr>
+		<em>*wenn angehakt, werden Zeilenumbrüche innerhalb der Zelle erlaubt. Zeilenumbrüche werden mit '\\' markiert.</em>
+
+		<br /><br />
+
+		<button onClick="convertTable()"><b>Tabelle konvertieren</b></button>
+		<button onClick="convertAll()"><b>Alles konvertieren</b></button>
+		<button onClick="resetAll()"><b>Alles Zurücksetzen</b></button>
+
+		<br />
+		<hr>
+		<textarea name="latex" id="latex" cols="120" rows="30"></textarea>
+</body>
+</html>
