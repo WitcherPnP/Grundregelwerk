@@ -24,6 +24,14 @@ if (!String.prototype.toLatexLabel) {
   };
 }
 
+if (!String.prototype.toLatexBreaks) {
+  String.prototype.simpleReplace = function(str, value) {
+    return this.replace(new RegExp("("+str+")", "g"), function(match, number) { 
+      return value;
+    });
+  };
+}
+
 docReady(function() {
   var Name = document.getElementById("name");
   var Beschreibung = document.getElementById("beschreibung");
@@ -36,6 +44,7 @@ docReady(function() {
   var Probe = document.getElementById("probe");
   var Menge = document.getElementById("menge");
   var Vorkommen = document.getElementById("vorkommen");
+  var VorkommenIsMultiline = document.getElementById("isMultiline");
   var Region = document.getElementById("region");
   var Wert = document.getElementById("wert");
   var Utensilien = document.getElementById("utensilien");
@@ -53,6 +62,7 @@ docReady(function() {
     Probe.value = "";
     Menge.value = "1 pro Pflanze";
     Vorkommen.value = "";
+    VorkommenIsMultiline.checked = false;
     Region.value = "überall";
     Wert.value = "";
     Utensilien.value = "";
@@ -63,8 +73,7 @@ docReady(function() {
     if (Name.value) {
       Latex.value = getTable();
     } else {
-      Latex.value = getTable();
-      // alert("Bitte gebe den Namen der Ingredienz an.")
+      alert("Bitte gebe den Namen der Ingredienz an.");
     }
   }
 
@@ -72,8 +81,7 @@ docReady(function() {
     if (Name.value) {
       Latex.value = getAll();
     } else {
-      Latex.value = getAll();
-      // alert("Bitte gebe den Namen der Ingredienz an.")
+      alert("Bitte gebe den Namen der Ingredienz an.");
     }
   }
 
@@ -90,7 +98,7 @@ docReady(function() {
     var tableStr = "\\begin{table}[h] \n\
 \\begin{center} \n\
 \\begin{tabular}{|l|l|p{1cm}|l|l|} \n\
-  \t\\cline{1-2} \cline{4-5} \n\
+  \t\\cline{1-2} \\cline{4-5} \n\
   \t\\textbf{Hauptwirkstoff} & {0} && \\textbf{Pflückprobe} & {6} \\\\ \\cline{1-2} \\cline{4-5} \n\
   \t\\textbf{Sekundärwirkstoff} & {1} && \\textbf{Menge} & {7} \\\\ \\cline{1-2} \\cline{4-5} \n\
   \t\\textbf{Farbe} & {2} && \\textbf{Vorkommen} & {8} \\\\ \\cline{1-2} \\cline{4-5} \n\
@@ -112,7 +120,7 @@ docReady(function() {
         Spezialeigenschaften.value || "-",
         Probe.value || "-",
         Menge.value || "1 pro Pflanze",
-        Vorkommen.value || "-",
+        Vorkommen.value ? (VorkommenIsMultiline.checked ? "\\brcell{{0}}".format(Vorkommen.value.simpleReplace(",", " \\\\")) : Vorkommen.value) : "-",
         Region.value || "überall",
         Wert.value ? Wert.value + "Kr" : "n.a.",
         Utensilien.value || "-",
