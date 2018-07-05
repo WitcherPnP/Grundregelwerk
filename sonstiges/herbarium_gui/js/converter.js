@@ -107,8 +107,8 @@ docReady(function() {
   \t\\textbf{Spezialeigenschaften} & {5} && \\textbf{Utensilien} & {11} \\\\ \\cline{1-2} \\cline{4-5} \n\
 \\end{tabular} \n\
 \\end{center} \n\
-\\caption{} \n\
-\\label{tab:{12}} \n\
+\\caption{{12}} \n\
+\\label{tab:{13}} \n\
 \\end{table}";
 
       return tableStr.format(
@@ -124,6 +124,7 @@ docReady(function() {
         Region.value || "überall",
         Wert.value ? Wert.value + "Kr" : "n.a.",
         Utensilien.value || "-",
+        Name.value || "Name unbekannt",
         Name.value.toLatexLabel() || "-"
       );
   }
