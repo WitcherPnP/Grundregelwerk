@@ -15,11 +15,12 @@ if (!String.prototype.format) {
 if (!String.prototype.toLatexLabel) {
   String.prototype.toLatexLabel = function() {
     var args = arguments;
-    return this.toLowerCase().replace(/ä|ö|ü|ß/g, function(match, number) { 
+    return this.toLowerCase().replace(/ä|ö|ü|ß| /g, function(match, number) { 
       if (match === "ä") return "ae";
       else if (match === "ö") return "oe";
       else if (match === "ü") return "ue";
       else if (match === "ß") return "ss";
+      else if (match === " ") return "_";
     });
   };
 }
