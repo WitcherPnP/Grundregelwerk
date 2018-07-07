@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Herbarium GUI</title>
+	<meta charset="UTF-8" />
+	<link href="css/index.css" rel="stylesheet" />
+
+  <script src="js/polyfill.js"></script>
+	<script src="js/ready.js"></script>
+	<script src="js/spellConverter.js"></script>
+</head>
+<body>
+    <div class="left"><textarea placeholder="Probe: KL/IN/FF
+      Wirkung: Der Verzauberte erhält innerhalb von 6 Minuten nach dem Wirken des Zaubers verlorene LeP in Höhe der verwendeten AsP zurück. Der Zauberer kann maximal so viele AsP einsetzen, wie er FW hat. Für jede QS sinkt die Zeit um 1 Minute. Wird der Zauber vor dem Ablauf der durch den Konstitutionswert angegebenen Frist für den Tod eines Helden begonnen, kann er gerettet werden. Wird der Zauber jedoch unterbrochen, überlebt der Patient danach nur noch die verbliebenen Kampfrunden.
+      Zauberdauer: 16 Aktionen
+      AsP-Kosten: 1 AsP pro LeP, mindestens jedoch 4 AsP (Kosten sind nicht modifizierbar)
+      Reichweite: Berührung
+      Wirkungsdauer: sofort
+      Zielkategorie: Kulturschaffende
+      Merkmal: Heilung
+      Verbreitung: allgemein
+      Steigerungsfaktor: B" name="spell" id="spell" cols="60" rows="30"></textarea></div>
+    <div ><textarea name="latex" id="latex" cols="60" rows="30"></textarea></div>
+
+    <button onClick="convert()"><b>Konvertieren</b></button>
+		<button onClick="reset()"><b>Zurücksetzen</b></button>
+</body>
+</html>
