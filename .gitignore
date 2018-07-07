@@ -12,6 +12,7 @@ Charakterbogen
 *.toc
 *.bbl
 *.blg
+*.dvi
 
 # images
 *.jpg
