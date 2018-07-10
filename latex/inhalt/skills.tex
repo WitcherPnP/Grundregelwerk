@@ -126,17 +126,18 @@ Um Energie aus der gewählten Quelle zu schöpfen, muss der Spieler eine Probe a
 \begin{center}
 \begin{tabular}{|l|l|}
 \hline
-\textbf{Menge Energie über Maximum} & \textbf{Auswirkung} \\ \hline
-\textbf{1-2} & Leichter Schock (Paralyse +1) \\ \hline
-\textbf{3-5} & Schwerer Schock (Paralyse +2) \\ \hline
-\textbf{6-14} & Ohnmacht (Betäubung IV) \\ \hline
-\textbf{15+} & Tod \\ \hline
+\textbf{Menge Energie über Maximum (n)} & \textbf{Auswirkung} \\ \hline
+\textbf{1-6} & Schock (Paralyse +1 für nAK, n-2 Schaden) \\ \hline
+\textbf{7-15} & Ohnmacht (Betäubung IV, n-13 Schaden) \\ \hline
+\textbf{16+} & Tod \\ \hline
 
 \end{tabular}
 \end{center}
 \caption{Folgen von Energieüberlastung}
 \label{tab:energieueberlastung}
 \end{table}
+
+Schaden den man durch eine magische Überbelastung bekommt kann nicht negativ werden. Es ist dadurch also keine Heilung möglich. Die Dauer des Schocks hängt außerdem von der stärke der Überlastung ab.
 
 Die zweite bis fünfte Spalte in Tabelle \ref{tab:energie_schoepfen} gibt den Ausbildungsgrad des Zauberers an. Die Zahl hinter dem Ausbildungsgrad gibt an, um wie viel \textit{Magiekunde}-Proben zum Schöpfen von Energie erleichtert sind. Die Werte, die nicht in Klammern stehen geben die \textbf{maximale Menge Energie (max.M)} an, die pro Aktion aus dem Element geschöpft werden kann. \textbf{Zahlen in Klammern} repräsentieren eine Probe auf \textit{Magiekunde}, die um die entsprechende Zahl vereinfacht (+) bzw. erschwert (-) ist. 
 
@@ -216,7 +217,6 @@ Ein Magier kann sich je nach Erfahrung auf eine oder mehrere Zauberkategorien sp
 \label{tab:einflusszauber}
 \end{longtable}
 
-\newpage
 
 \subsection{Elementar}
 \begin{longtable}{|p{5cm}|p{10cm}|}
