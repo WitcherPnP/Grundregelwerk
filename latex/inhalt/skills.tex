@@ -13,18 +13,18 @@ Aber nun wieder zurück zu den Akademikern. Je nach Erfahrungs- bzw. Ausbildungs
 \begin{center}
 \begin{tabular}{|l|l|l|l|l|}
 \hline
-\textbf{Ausbildungsgrad} & \textbf{Mana} & \textbf{SK} & \brcell{\textbf{Anzahl Zauber}\\\textbf{(max)}} & \brcell{\textbf{Erleichterung}\\\textbf{beim Schöpfen}} \\ \hline
-\textbf{Novize} & 12 & 0 & 6 (8) & 0 \\ \hline
-\textbf{Adept} & 17 & 1 & 8 (10) & +1 \\ \hline
-\textbf{Erfahren} & 22 & 2 & 10 (12) & +2 \\ \hline
-\textbf{Meister} & 50+ & 3 & 12 (15) & +3 \\ \hline
+\textbf{Ausbildungsgrad} & \textbf{Mana} & \textbf{SK} & \brcell{\textbf{Magiepunkte}\\\textbf{(max. Zauber)}} & \brcell{\textbf{Erleichterung}\\\textbf{beim Schöpfen}} \\ \hline
+\textbf{Novize} & 12 & 0 & 12 (6) & 0 \\ \hline
+\textbf{Adept} & 17 & 1 & 20 (9) & +1 \\ \hline
+\textbf{Erfahren} & 22 & 2 & 29 (12) & +2 \\ \hline
+\textbf{Meister} & 50+ & 3 & 39 (16) & +3 \\ \hline
 \end{tabular}
 \end{center}
 \caption{Magier-Attribute abhängig durch den Erfahrungs- bzw. Ausbildungsgrad}
 \label{tab:magier-attribute}
 \end{table}
 
-Die Abbildung \ref{tab:magier-attribute} gibt die Seelenkraft des Spielers in Abhängigkeit des Ausbildungsgrades an. Der Wert in der Spalte \textit{Anzahl Zauber (max)}, der nicht in Klammern steht gibt an, wie viele Zaubersprüche der Spieler bei der Erstellung des Charakters wählen darf. Spieler können unter Umständen weitere Fähigkeiten erlernen. Die maximale Anzahl (die Zahl in Klammern) darf jedoch nicht überschritten werden. Die \textit{Mana}-Spalte gibt an, wie viel Energie maximal geschöpft werden kann, bevor an den Kräften des Körpers gezerrt wird.
+Die Abbildung \ref{tab:magier-attribute} gibt die Seelenkraft des Spielers in Abhängigkeit des Ausbildungsgrades an. Der Wert in der Spalte \textit{Magiepunkte (max. Zauber)}, der nicht in Klammern steht gibt an, wie viele Punkte der Spieler zur Verfügung hat um Fähigkeiten zu erwerben (siehe Kapitel \ref{chap:magiebegabte_klassen} zur Charaktererstellung von Magiern). Spieler können unter Umständen weitere Fähigkeiten erlernen. Die maximale Anzahl an Zaubersprüchen (die Zahl in Klammern) darf jedoch nicht überschritten werden. Die \textit{Mana}-Spalte gibt an, wie viel Energie maximal geschöpft werden kann, bevor es zu einer magischen Energieüberlastung kommt.
 
 Ein Meister ist in der Lage aus jedem Element Energie zu ziehen, ohne eine Probe auf \textit{Magiekunde} ablegen zu müssen. Jedoch kann er nicht mehr Energie aus einem Element pro Aktion schöpfen als in Tabelle \ref{tab:energie_schoepfen} angegeben.
 
@@ -42,6 +42,17 @@ Aus der Luft kann viel Energie geschöpft werden. Aufgrund seiner unbeständigen
 
 \subsection{Feuer}
 Die Kraft des Feuers ist ebenso gewaltig wie unstet und sie lässt sich leicht und schnell beschwören. Das liegt daran, dass man die Energie, die durch das Feuer kanalisiert wird, relativ mühelos "`greifen"' kann und ein grüner Adept zehrt schon mal zu heftig oder zu gierig daran. Darum müssen Quellen ganz besonders vorsichtig sein, denn gelangen sie mit den Energien des Feuers in Kontakt, kann das ihre speziellen Fähigkeiten aktivieren, meist auf äußerst destruktive Weise.
+
+
+\section{Orte der Macht}
+Ein Ort der Macht ist ein Punkt, an dem die magische Energie zusammenläuft und besonders präsent ist. Häufig werden dort Riten abgehalten oder Kultstätten errichtet. Außerdem werden Drachen und Katzen von solchen Orten der Macht angelockt. Andere Tiere wiederum meiden sie. An solchen Orten ist das Schöpfen von Energie um 2 erleichtert.
+
+\section{Priester und Druiden}
+Priester und Druiden mit magischen Fähigkeiten beginnen als \textit{Novizen}. Indem sie beten oder sich hypnotisieren sind sie in der Lage die Kraft ebenso zu manipulieren wie Zauberer. Und das ohne jedes formelle Training, ohne Studium und ohne Vorbereitung. Manche Zauberer versuchen das Phänomen zu erklären. Sie kommen zu  dem Schluss, dass Priester durch Gebete in eine Art Trance verfallen oder sich selbst hypnotisieren und so ihre Fähigkeit aktivieren, die Energie zu lenken und zu nutzen wie es ausgebildete Zauberer tun.
+
+Priester und Novizen müssen regelmäßig beten um Zauber ausführen zu können. \textit{Beten} dauert 4 Aktionen. Seine maximale Energie (der Standardwert) wird um 1+1W4 erhöht. Die Erhöhung bezieht sich immer auf den Standardwert, auch wenn dieser noch nicht erreicht ist. Sinken kann der aktuelle Wert jedoch nicht. Wenn die maximale Energie auf dem Standardwert ist, kann kein Zauber gewirkt werden. Jede Stunde sinkt die maximale Energie um 1 bis der Standardwert erreicht ist.
+
+Der SL darf den Wurf, zur temporären Erhöhung der maximalen Energie, verbessern oder verschlechtern, je nachdem wo der Held betet. Es macht also einen Unterschied ob er an einer Kathedrale des eigenen Kultes oder in einer Taverne betet. Außerdem ist zum Beten zwingend Ruhe nötig.
 
 
 \section{Zauberaktionen}
@@ -180,8 +191,8 @@ Aus der Tabelle \ref{tab:energie_schoepfen} können folgende Formeln zur Berechn
 \label{chap:magieprobe}
 Für den eigentlichen Zauber muss eine Probe abgelegt werden. Das funktioniert genau so wie bei einem Talent. Jede Fähigkeit basiert auf drei Grundattributen. Die Wirkung mancher Zauber werden durch die erreichte QS verändert.
 
-
 \section{Spezialisierungen}
+\label{chap:spezialisierungen}
 Ein Magier kann sich je nach Erfahrung auf eine oder mehrere Zauberkategorien spezialisieren. Zauber der eigenen Spezialisierung bekommen einen erhöhten Fertigkeitswert (FW), abhängig von der Erfahrung.
 
 \subsection{Dämonisch}
