@@ -17,7 +17,7 @@ docReady(function() {
   };
 
   var parse = function(str) {
-    var regex = new RegExp(/(?:(.*)\n*)?Probe: (.*)\n*\nWirkung: ((?:.|\n)*)\n*\nZauberdauer: (.*)\n*\nAsP-Kosten: (.*)\n*\nReichweite: (.*)\n*\nWirkungsdauer: (.*)\n*\nZielkategorie: (.*)\n*\nMerkmal: (.*)\n*\nVerbreitung: (.*)\n*\nSteigerungsfaktor: (.*)/g);
+    var regex = new RegExp(/(?:(.*)(?: |\n)*)?Probe: (.*)\n*\nWirkung: ((?:.|\n)*)\n+\nZauberdauer: (.*)\n*\nAsP-Kosten: (.*)\n*\nReichweite: (.*)\n*\nWirkungsdauer: (.*)\n*\nZielkategorie: (.*)\n*\nMerkmal: (.*)\n*\nVerbreitung: (.*)\n*\nSteigerungsfaktor: (.*)/g);
     var match = regex.exec(str);
 
     return {
@@ -42,6 +42,7 @@ docReady(function() {
     "\\textbf{Wirkung:} {2} \\\\\n" + 
     "\\textbf{Zauberdauer (ZD/ZZ):} {3} \\\\\n" + 
     "\\textbf{Mana-Kosten (MK):} {4} \\\\\n" + 
+    "\\textbf{Reichweite (RW):} {10} \\\\\n" + 
     "\\textbf{Wirkungsdauer (WD):} {5} \\\\\n" + 
     "\\textbf{Zielkategorie:} {6} \\\\\n" + 
     "\\textbf{Spezialisierung:} {7} \\\\\n" + 
@@ -57,7 +58,8 @@ docReady(function() {
       spell.zielkategorie,
       spell.spezialisierung,
       spell.steigungsfaktor,
-      spell.name.toLatexLabel()
+      spell.name.toLatexLabel(),
+      spell.reichweite
     );
   };
 
